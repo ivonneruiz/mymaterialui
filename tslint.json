@@ -1,0 +1,176 @@
+{
+  "defaultSeverity": "error",
+  "rulesDirectory": [],
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-eslint-rules"
+  ],
+  "exclude": [
+    "node_modules",
+    "App_Data",
+    "App_Start",
+    "bin",
+    "Content",
+    "Controllers",
+    "fonts",
+    "Models",
+    "obj",
+    "Properties",
+    "Scripts",
+    "Views"
+  ],
+  "rules": {
+    "align": [ true ], // Enforces vertical alignment
+    "array-type": [ false ], // Requires using either ‘T[]’ or ‘Array' for arrays.
+    "arrow-parens": false, // Requires parentheses around the parameters of arrow function definitions.
+    "ban-types": [
+      true,
+      [ "Object" ],
+      [ "Boolean" ],
+      [ "Number" ],
+      [ "String" ],
+      [ "Symbol" ]
+    ], // Bans specific types from being used. Does not ban the corresponding runtime objects from being used.
+    "callable-types": false, // An interface or literal type with just a call signature can be written as a function type.
+    "class-name": true, // Enforces PascalCased class and interface names.
+    "curly": true, //  Enforces braces for if/for/do/while statements.
+    "eofline": false, // Ensures the file ends with a newline.
+    "forin": false, // Requires a for ... in statement to be filtered with an if statement.
+    "import-spacing": true, // Ensures proper spacing between import statement keywords
+    "indent": [
+      true,
+      "spaces",
+      4
+    ], // Enforces indentation with tabs or spaces.
+    "interface-name": [ true, "always-prefix" ], // Requires interface names to begin with a capital ‘I’
+    "interface-over-type-literal": true, // Prefer an interface declaration over a type literal (type T = { ... })
+    "jsx-alignment": true, // Alignment closing tag
+    "jsx-boolean-value": [ false ], // Bollean property require an explicit true or false
+    "jsx-no-lambda": [ true ],
+    "jsx-no-multiline-js": [ false ],
+    "jsx-no-string-ref": [ false ],
+    "jsx-wrap-multiline": [ false ],
+    "max-classes-per-file": [ true, 2 ], // A file may not contain more than the specified number of classes
+    "max-line-length": [ true, 150 ], // Limiting the length of a line of code improves code readability
+    "member-access": [ true ], // Requires explicit visibility declarations for class members.
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "private-static-field",
+          "public-static-field",
+          "private-instance-field",
+          "public-instance-field",
+          "private-constructor",
+          "public-constructor",
+          "private-instance-method",
+          "protected-instance-method",
+          "public-instance-method"
+        ]
+      }
+    ], // Enforces member ordering.
+    "new-parens": true, // Requires parentheses when invoking a constructor via the new keyword.
+    "no-angle-bracket-type-assertion": false, // Requires the use of as Type for type assertions instead of <Type>.
+    "no-conditional-assignment": false, // Disallows any type of assignment in conditionals.
+    "no-consecutive-blank-lines": [ true, 1 ], // Disallows one or more blank lines in a row.
+    "no-console": {
+      "options": [ "true" ],
+      "severity": "warning"
+    },
+    "no-empty": true, // Disallows empty blocks.
+    "no-empty-interface": false, // Forbids empty interfaces.
+    "no-namespace": [ true, "allow-declarations" ], // Disallows use of internal modules and namespaces.
+    "no-reference": true, // Disallows /// <reference path=> imports (use ES6-style imports instead).
+    "no-shadowed-variable": false, // Disallows shadowing variable declarations.
+    "no-string-literal": false, // Forbids unnecessary string literal property access. Allows obj["prop-erty"] (can’t be a regular property access). Disallows obj["property"] (should be obj.property).
+    "no-trailing-whitespace": true, // Disallows trailing whitespace at the end of a line.
+    "no-unused-expression": true, // Disallows unused expression statements.
+    "object-curly-spacing": "always",
+    "object-literal-key-quotes": [ false ], // Enforces consistent object literal property quote style.
+    "object-literal-shorthand": false, // Enforces/disallows use of ES6 object literal shorthand.
+    "object-literal-sort-keys": [ true, "ignore-case" ], // Checks ordering of keys in object literals. When using the default alphabetical ordering, additional blank lines may be used to group object properties together while keeping the elements within each group in alphabetical order.
+    "one-line": [ true, "check-open-brace" ], // Requires the specified tokens to be on the same line as the expression preceding them.
+    "only-arrow-functions": false, // Disallows traditional (non-arrow) function expressions.
+    "ordered-imports": true, // Requires that import statements be alphabetized and grouped.
+    "prefer-const": true, // Requires that variable declarations use const instead of let and var if possible.
+    "prefer-for-of": true, // Recommends a ‘for-of’ loop over a standard ‘for’ loop if the index is only used to access the array being iterated.
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ], // Requires single or double quotes for string literals.
+    "semicolon": [
+      true,
+      "always",
+      "ignore-interfaces"
+    ], // Enforces consistent semicolon usage at the end of every statement.
+    "space-before-function-paren": [ false ], // Require or disallow a space before function parenthesis
+    "switch-default": false, // Require a default case in all switch statements.
+    "trailing-comma": [ true ], //  Requires or disallows trailing commas in array and object literals, destructuring assignments, function typings, named imports and exports and function parameters.
+    "triple-equals": true, // Requires === and !== in place of == and !=.
+    "typedef": [ true ], // Requires type definitions to exist.
+    "unified-signatures": true, // Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter.
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ], // Checks variable names for various errors.
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-module",
+      "check-operator",
+      "check-preblock",
+      "check-rest-spread",
+      "check-separator",
+      "check-typecast",
+      "check-type-operator"
+    ] // Enforces whitespace style conventions.
+  },
+  "jsRules": {
+    "array-type": [ false ],
+    "arrow-parens": false,
+    "curly": false,
+    "eofline": false,
+    "forin": false,
+    "indent": [ false ],
+    "interface-name": [ false ],
+    "jsx-alignment": false,
+    "jsx-no-lambda": [ false ],
+    "jsx-no-multiline-js": [ false ],
+    "jsx-no-string-ref": [ false ],
+    "jsx-wrap-multiline": [ false ],
+    "max-line-length": [ false ],
+    "member-access": [ false ],
+    "member-ordering": [ false ],
+    "new-parens": false,
+    "no-conditional-assignment": false,
+    "no-consecutive-blank-lines": [ false ],
+    "no-empty": false,
+    "no-reference": false,
+    "no-shadowed-variable": false,
+    "no-string-literal": false,
+    "no-trailing-whitespace": false,
+    "no-unused-expression": false,
+    "no-unused-new": false,
+    "object-literal-key-quotes": [ false ],
+    "object-literal-shorthand": false,
+    "object-literal-sort-keys": false,
+    "one-line": [ false ],
+    "only-arrow-functions": [ false ],
+    "ordered-imports": [ false ],
+    "prefer-for-of": false,
+    "quotemark": [ false ],
+    "semicolon": [ false ],
+    "switch-default": false,
+    "trailing-comma": [ false ],
+    "triple-equals": false,
+    "typedef": [ false ],
+    "variable-name": false,
+    "whitespace": [ false ]
+  }
+}

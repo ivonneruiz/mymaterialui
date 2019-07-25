@@ -1,0 +1,38 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "emitDecoratorMetadata": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": false,
+    "inlineSources": false,
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist",
+    "removeComments": true,
+		"rootDir": "./src",
+    "strict": true,
+    "strictNullChecks": true,
+		"stripInternal": true,
+    "target": "es6"
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/**/*.tsx",
+    "./src/**/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}

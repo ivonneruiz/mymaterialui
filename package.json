@@ -1,0 +1,46 @@
+{
+  "name": "mymaterialui",
+  "version": "0.0.1",
+  "description": "My Material UI",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf ./dist/*.js ./dist/**/*.js.map",
+    "build:es6": "tsc",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivonneruiz/mymaterialui.git"
+  },
+  "author": "Ivonne Ruiz",
+  "engines": {
+    "node": ">=8.12.0"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "tslint": "5.12.1",
+    "tslint-eslint-rules": "5.4.0",
+    "tslint-react": "3.6.0",
+    "ts-node": "8.0.2"
+  },
+  "dependencies": {
+    "@material-ui/core": "3.3.2",
+    "@types/react": "16.8.4",
+    "@types/react-dom": "16.8.4",
+    "classnames": "2.2.6",
+    "lodash": "4.17.11",
+    "moment": "2.24.0",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "react-jss": "8.6.1",
+    "react-media": "1.9.2",
+    "typescript": "3.4.1"
+  }
+}
