@@ -5,6 +5,9 @@
   "files": [
     "/dist"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "type-check": "tsc --noEmit",
     "clean": "rimraf ./dist/*.js ./dist/**/*.js.map",
@@ -35,11 +38,10 @@
     "@types/react": "16.8.4",
     "@types/react-dom": "16.8.4",
     "classnames": "2.2.6",
-    "lodash": "4.17.11",
+    "lodash": "^4.17.15",
     "moment": "2.24.0",
     "react": "16.8.4",
     "react-dom": "16.8.4",
-    "react-jss": "8.6.1",
     "react-media": "1.9.2",
     "typescript": "3.4.1"
   }
