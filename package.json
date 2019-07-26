@@ -1,18 +1,18 @@
 {
   "name": "@ivonneruiz/mymaterialui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "My Material UI",
   "files": [
-    "/dist"
+    "/lib"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "type-check": "tsc --noEmit",
-    "clean": "rimraf ./dist/*.js ./dist/**/*.js.map",
+    "clean": "rm -rf ./lib/*",
     "build:es6": "tsc",
-    "build": "tsc"
+    "build": "npm run clean && npm run build:es6"
   },
   "repository": {
     "type": "git",

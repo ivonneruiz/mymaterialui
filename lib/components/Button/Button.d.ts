@@ -1,4 +1,5 @@
 import React from 'react';
+import './style/Button.css';
 export declare type ButtonColor = 'default' | 'primary' | 'secondary';
 export interface IButtonProps {
     children: React.ReactNode;
