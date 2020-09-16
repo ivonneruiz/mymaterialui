@@ -1,4 +1,6 @@
-﻿export interface ITest {
+﻿// Example
+
+export interface ITest {
     myprop1: string;
     myprop2: boolean;
     myprop3: Array<ITest2>;
